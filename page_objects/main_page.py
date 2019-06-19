@@ -35,4 +35,3 @@ class MainPage(web_element.Base):
         ask_btn = self.element(self.ask_question_btn)
         ask_btn.click()
         return ask_question_page.AskQuestion(self)
-

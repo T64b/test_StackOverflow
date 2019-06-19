@@ -9,9 +9,3 @@ def browser():
     yield driver
     # Teardown driver
     driver.destroy()
-
-
-
-
-
-

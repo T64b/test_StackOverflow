@@ -27,7 +27,15 @@ class Base:
 # Fixtures class
 class Fixture:
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        capabilities = {
+            'browserName': 'chrome',
+            'version': '75.0',
+            'enableVNC': True,
+            'enableVideo': True
+        }
+        # self.driver = webdriver.Chrome()
+        self.driver = webdriver.Remote(command_executor='http://0.0.0.0:4444/wd/hub',
+                                       desired_capabilities=capabilities)
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(5)
 

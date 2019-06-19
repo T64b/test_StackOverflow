@@ -20,7 +20,3 @@ class AskQuestion(web_element.Base):
         tag = self.element(self.tag_field)
         tag.send_keys(text)
         return self.element(self.tag_srch_result).text
-
-
-
-

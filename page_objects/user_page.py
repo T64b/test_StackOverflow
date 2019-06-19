@@ -9,4 +9,3 @@ class LoggedUserPage(web_element.Base):
     def get_title(self):
         return self.driver.title
 
-

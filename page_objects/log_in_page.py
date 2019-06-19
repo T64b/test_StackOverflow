@@ -10,7 +10,7 @@ class LogInPage(web_element.Base):
     email_field = '//input[@id="email"]'
     password_field = "//input[@id='password']"
     login = "aleksandr.bronza@gmail.com"
-    password = "******"  # if needed, please contact
+    password = "***********"  # if needed, please contact
     submit_btn = '//button[@id="submit-button"]'
 
     def __init__(self, driver):
@@ -31,9 +31,3 @@ class LogInPage(web_element.Base):
         sbm_btn = self.element(self.submit_btn)
         sbm_btn.click()
         return user_page.LoggedUserPage(self)
-
-
-
-
-
-
